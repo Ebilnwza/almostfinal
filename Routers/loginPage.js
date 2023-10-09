@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
     req.session.user_id = user._id.toString();
     req.session.user_username = user.username.toString();
     req.session.user_email = user.email.toString();
-    
+    req.session.userloggin = true;
     res.redirect('/');
   } catch (error) {
     console.error('Error:', error.message);
