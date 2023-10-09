@@ -1,0 +1,20 @@
+<ul class="nav justify-content-center">
+  <li class="nav-item bg-white rounded-5">
+      <a class="nav-link active" aria-current="page" href="/">หน้าหลัก</a>
+  </li>
+  <% if(loggin) { %>
+    <li class="nav-item bg-white rounded-5">
+      <a class="nav-link" href="/createposts">สร้างโพสต์</a>
+  </li>
+      <li class="nav-item bg-white rounded-5">
+          <a class="nav-link" href="/killsession">ออก</a>
+      </li>
+  <% } if(!loggin) { %>
+      <li class="nav-item bg-white rounded-5">
+          <a class="nav-link" href="/loginpage">เข้าสู่ระบบ</a>
+      </li>
+      <li class="nav-item bg-white rounded-5">
+          <a class="nav-link" href="/registerpage">สมัครสมาชิก</a>
+      </li>
+  <% } %>
+</ul>
